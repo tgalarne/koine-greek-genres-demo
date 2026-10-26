@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Style and Sociolects: eLearning Course Demo</title>
+<meta name="description" content="A scrolling, Rise-style eLearning course demo built from a thesis on the sociolects of Luke and Plutarch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700;800;900&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<script>try{var s=JSON.parse(localStorage.getItem("ssdemo.v1")||"{}");var d=s.theme?s.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light")}catch(e){}</script>
+<link rel="stylesheet" href="css/course.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to lesson content</a>
+<header class="topbar" role="banner">
+  <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="drawer"></button>
+  <a class="wordmark" href="#/" id="wordmark">Style and Sociolects</a>
+  <button class="tool" id="themeBtn" aria-pressed="false" title="Switch between light and dark appearance"><svg class="moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg> <span class="lbl">Dark mode: </span><span id="themeState">off</span></button>
+  <button class="tool" id="annotBtn" aria-pressed="false" title="Show the objective and assessment each block is mapped to"><span class="lbl">ID view: </span><span id="annotState">off</span></button>
+  <div class="progress" role="progressbar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress"><i></i></div>
+</header>
+<div class="scrim" id="scrim"></div>
+<nav class="drawer" id="drawer" aria-label="Course navigation" role="dialog" aria-modal="true" aria-hidden="true"></nav>
+<div class="live" id="live" aria-live="polite" role="status"></div>
+<main id="main" tabindex="-1"></main>
+<button class="btn secondary back-top" id="backTop" type="button">Back to top</button>
+
+<script src="js/data/objectives.js"></script>
+<script src="js/data/thesis.js"></script>
+<script src="js/core.js"></script>
+<script src="js/blocks.js"></script>
+<script src="js/assess.js"></script>
+<script src="js/content/tables.js"></script>
+<script src="js/content/overviews.js"></script>
+<script src="js/content/m0-m1.js"></script>
+<script src="js/content/m2-m3.js"></script>
+<script src="js/content/m4-m5.js"></script>
+<script src="js/content/m6-m7.js"></script>
+<script src="js/content/m8-m9.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
